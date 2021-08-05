@@ -1,0 +1,31 @@
+.side-bar {
+  width: 296px;
+  height: 100vh;
+  background: $gray-100;
+}
+
+.logo {
+  padding: 32px;
+
+  a {
+    background-image: url("../../assets/images/logo-ANSWER.svg");
+    width: 151px;
+    height: 40px;
+    @include hide-text-in-image;
+  }
+}
+
+.menu li {
+  margin-bottom: 22px;
+  border-left: 4px solid transparent;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  .material-icons {
+    margin-left: 32px;
+  }
+
+  &:hover {
+    border-left: 4px solid $success;
+  }
+}

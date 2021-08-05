@@ -19,6 +19,47 @@
   </header>
 
   <main>
+    <div class="side-bar">
+      <h1 class="logo"><a href="#">Dashboard</a></h1>
+      <ul class="menu list-unstyled">
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">assessment</span>
+            <span class="ms-3">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">question_answer</span>
+            <span class="ms-3">Question</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">assignment</span>
+            <span class="ms-3">Assignment</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">video_library</span>
+            <span class="ms-3">Course</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">supervisor_account</span>
+            <span class="ms-3">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex align-items-center text-decoration-none text-dark text-success">
+            <span class="material-icons">settings</span>
+            <span class="ms-3">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <%- contents %>
   </main>
 
@@ -26,6 +67,12 @@
 
   </footer>
   <script src="./assets/js/vendors.js"></script>
+  <script>
+    $('.menu li').hover(function (e) {
+      // text-dark 比 text-success 前面 (先看順序，在看前後)
+      $(this).find('a').toggleClass('text-dark')
+    });
+  </script>
 </body>
 
 </html>
