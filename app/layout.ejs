@@ -20,38 +20,38 @@
       <div>
         <h1 class="logo p-8"><a href="#">Dashboard</a></h1>
         <ul class="menu list-unstyled">
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='dashboard') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='dashboard') {%>text-dark<%}%>">
               <span class="material-icons ms-8">assessment</span>
               <span class="ms-4">Dashboard</span>
             </a>
           </li>
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='question') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='question') {%>text-dark<%}%>">
               <span class="material-icons ms-8">question_answer</span>
               <span class="ms-4">Question</span>
             </a>
           </li>
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='index') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='index') {%>text-dark<%}%>">
               <span class="material-icons ms-8">assignment</span>
               <span class="ms-4">Assignment</span>
             </a>
           </li>
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='course') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='course') {%>text-dark<%}%>">
               <span class="material-icons ms-8">video_library</span>
               <span class="ms-4">Course</span>
             </a>
           </li>
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='admin') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='admin') {%>text-dark<%}%>">
               <span class="material-icons ms-8">supervisor_account</span>
               <span class="ms-4">Admin</span>
             </a>
           </li>
-          <li>
-            <a href="" class="d-flex align-items-center text-dark text-success">
+          <li class="<%if (current=='settings') {%>active<%}%>">
+            <a href="" class="d-flex align-items-center text-success <%if (current!='settings') {%>text-dark<%}%>">
               <span class="material-icons ms-8">settings</span>
               <span class="ms-4">Settings</span>
             </a>
@@ -82,7 +82,7 @@
   <script>
     $('.menu li').hover(function (e) {
       // text-dark 比 text-success 前面 (先看順序，在看前後)
-      $(this).find('a').toggleClass('text-dark')
+      if (!$(this).hasClass('active')) $(this).find('a').toggleClass('text-dark')
     });
   </script>
 </body>
