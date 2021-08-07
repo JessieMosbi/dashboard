@@ -2,8 +2,8 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "./config/variables";
 @import "./config/mixin";
 @import "./config/base";
 @import "./layout/index";
 @import "./layout/layout";
+@import "./page/assignment";

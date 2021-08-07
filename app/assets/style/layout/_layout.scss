@@ -1,6 +1,7 @@
 .side-bar {
   width: 296px;
   height: 100vh;
+  position: fixed;
 }
 
 .logo {
@@ -27,4 +28,18 @@
   &:hover {
     border-left: 4px solid $success;
   }
+}
+
+.login-user {
+  padding: 32px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.main {
+  margin-left: 296px;
 }
